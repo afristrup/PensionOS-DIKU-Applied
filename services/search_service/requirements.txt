@@ -1,0 +1,16 @@
+torch==2.1.1
+numpy==1.26.2
+sentence-transformers==2.2.2
+transformers==4.35.2
+fastapi==0.104.1
+uvicorn==0.24.0
+python-multipart==0.0.6
+sqlalchemy==2.0.23
+python-dotenv==1.0.0
+chromadb==0.6.2
+neo4j==5.15.0
+networkx==3.2.1
+llama-index==0.9.10
+psycopg2-binary==2.9.9
+llamaparse==0.1.1
+databases[postgresql]==0.8.0 
