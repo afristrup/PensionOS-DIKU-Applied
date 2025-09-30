@@ -8,6 +8,7 @@ import { mockQuickStats } from "@/lib/mockData";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 interface QuickStats {
     totalPlans: number;
@@ -87,19 +88,19 @@ export default function Home() {
                             Your comprehensive platform for managing pension plans and employee benefits with advanced AI-powered insights
                         </p>
                     </div>
-                    
+
                     <div className="flex flex-col sm:flex-row gap-4 mt-8">
                         <Button size="lg" asChild>
-                            <a href="/dashboard">
+                            <Link href="/dashboard">
                                 Get Started
                                 <ArrowRight className="ml-2 h-5 w-5" />
-                            </a>
+                            </Link>
                         </Button>
                         <Button size="lg" variant="outline" asChild>
-                            <a href="/search">
+                            <Link href="/search">
                                 Try Search
                                 <Search className="ml-2 h-5 w-5" />
-                            </a>
+                            </Link>
                         </Button>
                     </div>
 
@@ -141,10 +142,10 @@ export default function Home() {
                     </CardHeader>
                     <CardContent>
                         <Button className="w-full" variant="outline" asChild>
-                            <a href="/search">
+                            <Link href="/search">
                                 Get Started
                                 <ArrowRight className="ml-2 h-4 w-4" />
-                            </a>
+                            </Link>
                         </Button>
                     </CardContent>
                 </Card>
@@ -161,10 +162,10 @@ export default function Home() {
                     </CardHeader>
                     <CardContent>
                         <Button className="w-full" variant="outline" asChild>
-                            <a href="/upload">
+                            <Link href="/upload">
                                 Get Started
                                 <ArrowRight className="ml-2 h-4 w-4" />
-                            </a>
+                            </Link>
                         </Button>
                     </CardContent>
                 </Card>
@@ -181,10 +182,10 @@ export default function Home() {
                     </CardHeader>
                     <CardContent>
                         <Button className="w-full" variant="outline" asChild>
-                            <a href="/dashboard">
+                            <Link href="/dashboard">
                                 Get Started
                                 <ArrowRight className="ml-2 h-4 w-4" />
-                            </a>
+                            </Link>
                         </Button>
                     </CardContent>
                 </Card>
@@ -201,10 +202,10 @@ export default function Home() {
                     </CardHeader>
                     <CardContent>
                         <Button className="w-full" variant="outline" asChild>
-                            <a href="/chat">
+                            <Link href="/chat">
                                 Start Chat
                                 <ArrowRight className="ml-2 h-4 w-4" />
-                            </a>
+                            </Link>
                         </Button>
                     </CardContent>
                 </Card>
@@ -221,10 +222,10 @@ export default function Home() {
                     </CardHeader>
                     <CardContent>
                         <Button className="w-full" variant="outline" asChild>
-                            <a href="/knowledge-graph">
+                            <Link href="/knowledge-graph">
                                 Explore
                                 <ArrowRight className="ml-2 h-4 w-4" />
-                            </a>
+                            </Link>
                         </Button>
                     </CardContent>
                 </Card>
@@ -241,10 +242,10 @@ export default function Home() {
                     </CardHeader>
                     <CardContent>
                         <Button className="w-full" variant="outline" asChild>
-                            <a href="/clients">
+                            <Link href="/clients">
                                 View Clients
                                 <ArrowRight className="ml-2 h-4 w-4" />
-                            </a>
+                            </Link>
                         </Button>
                     </CardContent>
                 </Card>
